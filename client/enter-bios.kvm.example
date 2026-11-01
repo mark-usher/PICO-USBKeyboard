@@ -1,0 +1,4 @@
+# Enter BIOS setup: start this script, then power on or reset the target PC.
+# Taps Delete every 150 ms for about 15 s during POST (Award/AMI: Del; some boards use F2).
+delay 60
+repeat 100 150 key del

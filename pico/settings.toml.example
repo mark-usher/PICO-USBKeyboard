@@ -1,0 +1,16 @@
+# Example only. Copy to the Pico as settings.toml and edit it THERE.
+# Never commit a real settings.toml (it is in .gitignore).
+CIRCUITPY_WIFI_SSID = "YOUR-SSID"
+CIRCUITPY_WIFI_PASSWORD = "YOUR-WIFI-PASSWORD"
+# One token per controller PC, comma-separated, no spaces, each >= 12 characters (the firmware refuses to start
+# otherwise). Each controller keeps its own token in the environment variable PICO_KVM_TOKEN
+# (setup/set-token.ps1 makes one), so one controller can be revoked alone.
+KVM_TOKENS = "CHANGE-ME-TOKEN-1,CHANGE-ME-TOKEN-2"
+KVM_PORT = 8099
+
+# Optional
+# KVM_MOUSE = 1        # 1 = keyboard + mouse (composite); default 0 = keyboard only (boot keyboard, BIOS-friendly)
+# KVM_IDLE_S = 300     # drop an idle client after this many seconds
+
+# Do NOT set CIRCUITPY_WEB_API_PASSWORD: leaving it unset keeps the CircuitPython
+# web workflow (file/REPL access over Wi-Fi) switched off.

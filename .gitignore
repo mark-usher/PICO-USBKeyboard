@@ -1,0 +1,6 @@
+settings.toml
+!settings.toml.example
+__pycache__/
+*.pyc
+dist/
+shots/
